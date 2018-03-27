@@ -1,5 +1,5 @@
 <?php 
-include("process.php");
+
 ?>
 <!doctype html>
 
@@ -18,197 +18,208 @@ include("process.php");
 </head>
 <body>
   <form method="post" action="process.php">
-  <div class="container">
+    <div class="container">
+      <div class="row">
+        <h2><p class="text-center">Resume Maker</p></h2>
+      </div>
+    </br>
+
+
     <div class="row">
-      <h2><p class="text-center">Resume Maker</p></h2>
+      <div class="col-md-8">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="">First and last name</span>
+          </div>
+          <input type="text" class="form-control" name="firstname">
+          <input type="text" class="form-control" name="lastname">
+        </div>
+      </div>
     </div>
   </br>
 
+    <div class="row">
+      <div class="col-md-8">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" >Email</span>
+          </div>
+          <input type="email" class="form-control" placeholder="email" name="email">
+        </div>
+      </div>
+    </div>
 
+    <div class="row">
+      <div class="col-md-8">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Date of Birth</span>
+          </div>
+          <input type="date" class="form-control" name="dateofbirth">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Adress</span>
+          </div>
+          <input type="text" class="form-control" name="adress">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div col-md-4>
+        <p class="text-center"><h5>Experienta profesionala</h5></p>
+      </div>
+    </div>
+
+    <div id="education_fields">
+
+      </div>
+
+    <div class="row">
+      <div class="col-md-8">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" >Company</span>
+          </div>
+          <input type="text" class="form-control" placeholder="Company" name="Company[]">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" >Job Title</span>
+          </div>
+          <input type="text" class="form-control" name="JobTitle[]">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" >Job Description</span>
+          </div>
+          <input type="text" class="form-control" name="JobDescription[]">
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col-md-8">
+        <div class="input-group mb-3">
+
+          <div class="input-group-prepend">
+            <span class="input-group-text" >Start/End Date</span>
+          </div>
+          <input type="date" class="form-control" name="startdate">
+          <input type="date" class="form-control" name="enddate">
+          <div class="input-group-btn">
+              <button class="btn btn-success" type="button"  onclick="education_fields();"> <span class="glyphicon glyphicon-plus" aria-hidden="true">Add</span> </button>
+            </div>
+        </div>
+      </div>
+    </div>       
+
+
+
+
+
+
+
+    
+
+
+
+
+        <div class="row">
+          <div col-md-4>
+            <p class="text-center"><h5>Educatie</h5></p>
+          </div>
+        </div>
+
+
+
+        <div class="row">
+          <div class="col-md-8">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Scoala generala</span>
+              </div>
+              <input type="text" class="form-control" name="scoala">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Specialitate</span>
+              </div>
+              <input type="text" class="form-control" name="specialitatescoala">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="">Perioada</span>
+              </div>
+              <input type="date" class="form-control" name="inceperescoala">
+              <input type="date" class="form-control" name="terminarescoala">
+            </div>
+          </div>
+        </div>
+      </br>
+    </br>
+  </br>
+
+  <div class="row">
+    <div class="col-md-8">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">Liceu</span>
+        </div>
+        <input type="text" class="form-control" name="liceu">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">Specialitate</span>
+        </div>
+        <input type="text" class="form-control" name="specialitateliceu">
+      </div>
+    </div>
+  </div>
   <div class="row">
     <div class="col-md-8">
       <div class="input-group">
         <div class="input-group-prepend">
-          <span class="input-group-text" id="">First and last name</span>
+          <span class="input-group-text" id="">Perioada</span>
         </div>
-        <input type="text" class="form-control" name="firstname">
-        <input type="text" class="form-control" name="lastname">
+        <input type="date" class="form-control">
+        <input type="date" class="form-control">
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" value="">Am doar 10 clase</label>
       </div>
     </div>
   </div>
-
-  <div class="row">
-    <div class="col-md-8">
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text" id="basic-addon1">Email</span>
-        </div>
-        <input type="email" class="form-control" placeholder="email" name="email">
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-8">
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text" id="basic-addon1">Date of Birth</span>
-        </div>
-        <input type="date" class="form-control" name="dateofbirth">
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-8">
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text" id="basic-addon1">Adress</span>
-        </div>
-        <input type="text" class="form-control" name="adress">
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div col-md-4>
-      <p class="text-center"><h5>Experienta profesionala</h5></p>
-    </div>
-  </div>
-
-
-  <div class="panel panel-default">
-
-    <div class="panel-body">
-
-      <div id="education_fields">
-
-      </div>
-      <div class="col-sm-3 nopadding">
-        <div class="form-group">
-          <input type="text" class="form-control" name="Company[]" value="" placeholder="Company">
-        </div>
-      </div>
-      <div class="col-sm-3 nopadding">
-        <div class="form-group">
-          <input type="text" class="form-control"  name="JobTitle[]" value="" placeholder="Job Title">
-        </div>
-      </div>
-      <div class="col-sm-3 nopadding">
-        <div class="form-group">
-          <input type="textarea" class="form-control" name="JobDescription[]" value="" placeholder="Job description">
-        </div>
-      </div>
-
-
-
-      <div class="col-sm-3 nopadding">
-        <div class="form-group">
-          <div class="input-group">
-            <select class="form-control" id="educationDate" name="startDate[]">
-
-              <option value="">Start Date</option>
-              <option value="2015">2015</option>
-              <option value="2016">2016</option>
-              <option value="2017">2017</option>
-              <option value="2018">2018</option>
-            </select>
-            <select class="form-control" id="educationDate" name="endDate[]">
-
-              <option value="">End Date</option>
-              <option value="2015">2015</option>
-              <option value="2016">2016</option>
-              <option value="2017">2017</option>
-              <option value="2018">2018</option>
-            </select>
-            <div class="input-group-btn">
-              <button class="btn btn-success" type="button"  onclick="education_fields();"> <span class="glyphicon glyphicon-plus" aria-hidden="true">Add</span> </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="clear"></div>
-
-
-
-
-      <div class="row">
-        <div col-md-4>
-          <p class="text-center"><h5>Educatie</h5></p>
-        </div>
-      </div>
-
-
-
-      <div class="row">
-        <div class="col-md-8">
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon1">Scoala generala</span>
-            </div>
-            <input type="text" class="form-control" name="scoala">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-8">
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon1">Specialitate</span>
-            </div>
-            <input type="text" class="form-control" name="specialitatescoala">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-8">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="">Perioada</span>
-            </div>
-            <input type="date" class="form-control" name="inceperescoala">
-            <input type="date" class="form-control" name="terminarescoala">
-          </div>
-        </div>
-      </div>
-    </br>
-  </br>
-</br>
-
-<div class="row">
-  <div class="col-md-8">
-    <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="basic-addon1">Liceu</span>
-      </div>
-      <input type="text" class="form-control" name="liceu">
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-8">
-    <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="basic-addon1">Specialitate</span>
-      </div>
-      <input type="text" class="form-control" name="specialitateliceu">
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-8">
-    <div class="input-group">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="">Perioada</span>
-      </div>
-      <input type="date" class="form-control">
-      <input type="date" class="form-control">
-    </div>
-    <div class="checkbox">
-      <label><input type="checkbox" value="">Am doar 10 clase</label>
-    </div>
-  </div>
-</div>
 </br>
 </br>
 </br>
@@ -301,7 +312,8 @@ include("process.php");
 <div class="row">
   <div class="form-group form-group-options col-xs-11 col-sm-8 col-md-4">
     <div class="input-group input-group-option col-xs-12">
-      <input type="text" name="option[]" class="form-control" >
+      <input type="text" name="limbistraine[]" class="form-control" placeholder="Limba">
+      <input type="text" name="nivellimba[]" class="form-control" placeholder="Nivel">
       <span class="input-group-addon input-group-addon-remove">
         <span class="glyphicon glyphicon-remove">Delete</span>
       </span>
@@ -441,7 +453,7 @@ include("process.php");
     var divtest = document.createElement("div");
     divtest.setAttribute("class", "form-group removeclass"+room);
     var rdiv = 'removeclass'+room;
-    divtest.innerHTML = '<div class="col-sm-3 nopadding"><div class="form-group"> <input type="text" class="form-control" id="Schoolname" name="Schoolname[]" value="" placeholder="School name"></div></div><div class="col-sm-3 nopadding"><div class="form-group"> <input type="text" class="form-control" id="Major" name="Major[]" value="" placeholder="Major"></div></div><div class="col-sm-3 nopadding"><div class="form-group"> <input type="text" class="form-control" id="Degree" name="Degree[]" value="" placeholder="Degree"></div></div><div class="col-sm-3 nopadding"><div class="form-group"><div class="input-group"> <select class="form-control" id="educationDate" name="educationDate[]"><option value="">Date</option><option value="2015">2015</option><option value="2016">2016</option><option value="2017">2017</option><option value="2018">2018</option> </select><div class="input-group-btn"> <button class="btn btn-danger" type="button" onclick="remove_education_fields('+ room +');"> <span class="glyphicon glyphicon-minus" aria-hidden="true"></span> </button></div></div></div></div><div class="clear"></div>';
+    divtest.innerHTML = '<div class="row"> <div class="col-md-8"> <div class="input-group mb-3"> <div class="input-group-prepend"> <span class="input-group-text" >Company</span> </div> <input type="text" class="form-control" placeholder="Company" name="Company[]"> </div> </div> </div> <div class="row"> <div class="col-md-8"> <div class="input-group mb-3"> <div class="input-group-prepend"> <span class="input-group-text" >Job Title</span> </div> <input type="text" class="form-control" name="JobTitle[]"> </div> </div> </div> <div class="row"> <div class="col-md-8"> <div class="input-group mb-3"> <div class="input-group-prepend"> <span class="input-group-text" >Job Description</span> </div> <input type="text" class="form-control" name="JobDescription[]"> </div> </div> </div> <div class="row"> <div class="col-md-8"> <div class="input-group mb-3"> <div class="input-group-prepend"> <span class="input-group-text" >Start/End Date</span> </div> <input type="date" class="form-control" name="startdate"> <input type="date" class="form-control" name="enddate"> <button class="btn btn-danger" type="button"  onclick="remove_education_fields('+ room +');"> <span class="glyphicon glyphicon-plus" aria-hidden="true">Delete</span> </button> </div> </div> </div>';
     
     objTo.appendChild(divtest)
   }
