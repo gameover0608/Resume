@@ -21,7 +21,7 @@ if(isset($_POST['send'])){
 	$abilitati = isset($_POST['abilitati']) ? filter_var($_POST['abilitati'],FILTER_SANITIZE_STRING) : '';
 	$abilitatidobandite = isset($_POST['abilitatidobandite']) ? filter_var($_POST['abilitatidobandite'],FILTER_SANITIZE_STRING) : '';
 
-	$limbistraine = isset($_POST['limbistraine']) ? filter_var($_POST['limbi straine'],FILTER_SANITIZE_STRING) : '';
+	$limbistraine = isset($_POST['limbistraine']) ? filter_var($_POST['limbistraine'],FILTER_SANITIZE_STRING) : '';
 	$nivellimbi = isset($_POST['nivellimba']) ? filter_var($_POST['nivellimba'],FILTER_SANITIZE_STRING) : '';
 
 	
@@ -50,7 +50,7 @@ if(isset($_POST['send'])){
 				<img src='poza.jpg' class='img-rounded' alt='Cinque Terre' width='200' height='200' style='display:block;margin-right: auto;margin-left: auto;'>
 			</div>
 			<div class='col-md-4'>
-				<h2 class='h2'><?php echo htmlspecialchars($firstName) ." ". htmlspecialchars($lastName); ?></h2>
+				<h2 class='h2'><?php echo $firstName ." ". $lastName; ?></h2>
 				<h3>23 ani, necasatorit</h3>
 			</div>
 			
@@ -63,9 +63,9 @@ if(isset($_POST['send'])){
 		</div>
 		<div class='row'>
 			<div class='col-md-12 '>
-				<p class='text-center'><?php echo htmlspecialchars($dateofbirth); ?></p>
-				<p class='text-center'><?php echo htmlspecialchars($email);?></p>
-				<p class="text-center"><?php echo htmlspecialchars($adress); ?></p>
+				<p class='text-center'><?php echo $dateofbirth; ?></p>
+				<p class='text-center'><?php echo $email;?></p>
+				<p class="text-center"><?php echo $adress; ?></p>
 			</div>
 		</div>
 
@@ -82,11 +82,11 @@ if(isset($_POST['send'])){
 	for($i=0;$i<count($companies);$i++){
 		echo "<div class='row'>
 		<div class='col-md-4'>
-		<h5><p class='text-center'>{htmlspecialchars($companies[$i])}</p> <small><p class='text-center'>01.10.2016 - 15.09.2017</p></small></h5>
+		<h5><p class='text-center'>{$companies[$i]}</p> <small><p class='text-center'>01.10.2016 - 15.09.2017</p></small></h5>
 		</div>
 		<div class='col-md-8'>
-		<h5><p class='text-center'>{htmlspecialchars($jobs[$i])}</p></h5>
-		<small><p class='text-center'>{htmlspecialchars($jobdescriptions[$i])}</p></small>
+		<h5><p class='text-center'>{$jobs[$i]}</p></h5>
+		<small><p class='text-center'>{$jobdescriptions[$i]}</p></small>
 		
 		</div>
 		</div>";
@@ -115,8 +115,8 @@ if(isset($_POST['send'])){
 		</p>
 	</div>
 	<div class='col-md-8'>
-		<p class='text-center'><?php echo htmlspecialchars($facultate) ; ?></p>
-		<small><p class='text-center'><?php echo htmlspecialchars($specializarefacultate) ; ?></p></small>
+		<p class='text-center'><?php echo $facultate ; ?></p>
+		<small><p class='text-center'><?php echo $specializarefacultate ; ?></p></small>
 	</div>
 </div>
 

@@ -275,7 +275,7 @@
 <div class="row">
   <div class="form-group form-group-options col-xs-11 col-sm-8 col-md-4">
     <div class="input-group input-group-option col-xs-12">
-      <input type="text" name="abilitati[]" class="form-control" placeholder="ex:PHP,Kinetoterapie..." required>
+      <input type="text" name="abilitati[]" class="form-control" placeholder="ex:PHP,Kinetoterapie...">
       <span class="input-group-addon input-group-addon-remove">
         <span class="glyphicon glyphicon-remove">Delete</span>
       </span>
