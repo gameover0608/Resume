@@ -23,6 +23,10 @@ if(isset($_POST['send'])){
 
 	$limbistraine = isset($_POST['limbistraine']) ? $_POST['limbistraine'] : '';
 	$nivellimbi = isset($_POST['nivellimba']) ? $_POST['nivellimba'] : '';
+
+	if(empty($firstname) || empty($lastname)){
+		echo "You must complete first and last name!";
+	} 
 	
 
 }

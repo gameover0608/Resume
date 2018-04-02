@@ -31,8 +31,9 @@
           <div class="input-group-prepend">
             <span class="input-group-text" id="">First and last name</span>
           </div>
-          <input type="text" class="form-control" name="firstname">
-          <input type="text" class="form-control" name="lastname">
+          <input type="text" class="form-control" name="firstname" required>
+          <input type="text" class="form-control" name="lastname" required>
+          <span class="error" style="color:red;">  *</span>
         </div>
       </div>
     </div>
@@ -44,7 +45,7 @@
           <div class="input-group-prepend">
             <span class="input-group-text" >Email</span>
           </div>
-          <input type="email" class="form-control" placeholder="email" name="email">
+          <input type="email" class="form-control" placeholder="email" name="email" required>
         </div>
       </div>
     </div>
@@ -55,7 +56,7 @@
           <div class="input-group-prepend">
             <span class="input-group-text">Date of Birth</span>
           </div>
-          <input type="date" class="form-control" name="dateofbirth">
+          <input type="date" class="form-control" name="dateofbirth" required>
         </div>
       </div>
     </div>
@@ -66,14 +67,14 @@
           <div class="input-group-prepend">
             <span class="input-group-text" id="basic-addon1">Adress</span>
           </div>
-          <input type="text" class="form-control" name="adress">
+          <input type="text" class="form-control" name="adress" required/>
         </div>
       </div>
     </div>
 
     <div class="row">
       <div col-md-4>
-        <p class="text-center"><h5>Experienta profesionala</h5></p>
+        <p class="text-center"><h5>Professional Experience</h5></p>
       </div>
     </div>
 
@@ -145,7 +146,7 @@
 
         <div class="row">
           <div col-md-4>
-            <p class="text-center"><h5>Educatie</h5></p>
+            <p class="text-center"><h5>Education</h5></p>
           </div>
         </div>
 
@@ -155,9 +156,9 @@
           <div class="col-md-8">
             <div class="input-group mb-3">
               <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1">Scoala generala</span>
+                <span class="input-group-text" id="basic-addon1">School</span>
               </div>
-              <input type="text" class="form-control" name="scoala">
+              <input type="text" class="form-control" name="scoala" required="">
             </div>
           </div>
         </div>
@@ -165,9 +166,9 @@
           <div class="col-md-8">
             <div class="input-group mb-3">
               <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1">Specialitate</span>
+                <span class="input-group-text" id="basic-addon1">School Specialty</span>
               </div>
-              <input type="text" class="form-control" name="specialitatescoala">
+              <input type="text" class="form-control" name="specialitatescoala" required>
             </div>
           </div>
         </div>
@@ -175,10 +176,10 @@
           <div class="col-md-8">
             <div class="input-group">
               <div class="input-group-prepend">
-                <span class="input-group-text" id="">Perioada</span>
+                <span class="input-group-text" id="">Period</span>
               </div>
-              <input type="date" class="form-control" name="inceperescoala">
-              <input type="date" class="form-control" name="terminarescoala">
+              <input type="date" class="form-control" name="inceperescoala" required>
+              <input type="date" class="form-control" name="terminarescoala" required>
             </div>
           </div>
         </div>
@@ -190,9 +191,9 @@
     <div class="col-md-8">
       <div class="input-group mb-3">
         <div class="input-group-prepend">
-          <span class="input-group-text" id="basic-addon1">Liceu</span>
+          <span class="input-group-text" id="basic-addon1">High School</span>
         </div>
-        <input type="text" class="form-control" name="liceu">
+        <input type="text" class="form-control" name="liceu" required="">
       </div>
     </div>
   </div>
@@ -200,9 +201,9 @@
     <div class="col-md-8">
       <div class="input-group mb-3">
         <div class="input-group-prepend">
-          <span class="input-group-text" id="basic-addon1">Specialitate</span>
+          <span class="input-group-text" id="basic-addon1">Specialty</span>
         </div>
-        <input type="text" class="form-control" name="specialitateliceu">
+        <input type="text" class="form-control" name="specialitateliceu" required>
       </div>
     </div>
   </div>
@@ -210,10 +211,10 @@
     <div class="col-md-8">
       <div class="input-group">
         <div class="input-group-prepend">
-          <span class="input-group-text" id="">Perioada</span>
+          <span class="input-group-text" id="">Period</span>
         </div>
-        <input type="date" class="form-control">
-        <input type="date" class="form-control">
+        <input type="date" class="form-control" required="">
+        <input type="date" class="form-control" required="">
       </div>
       <div class="checkbox">
         <label><input type="checkbox" value="">Am doar 10 clase</label>
@@ -229,25 +230,27 @@
   <div class="col-md-8">
     <div class="input-group mb-3">
       <div class="input-group-prepend">
-        <span class="input-group-text" id="basic-addon1">Facultate</span>
+        <span class="input-group-text" id="basic-addon1">University</span>
       </div>
       <input type="text" class="form-control" name="facultate">
     </div>
   </div>
 </div>
+
 <div class="row">
   <div class="col-md-8">
     <div class="input-group mb-3">
       <div class="input-group-prepend">
-        <span class="input-group-text" id="basic-addon1">Specializare</span>
-      </div>
-      <input type="text" class="form-control" name="specializarefacultate">
+        <span class="input-group-text" id="basic-addon1">Specialzation</span>
+        <input type="text" class="form-control" name="specializarefacultate">
     </div>
   </div>
 </div>
+</div>
+
 <div class="row">
   <div class="col-md-8">
-    <div class="input-group">
+    <div class="input-group mb-3">
       <div class="input-group-prepend">
         <span class="input-group-text" id="">Perioada</span>
       </div>
@@ -256,6 +259,7 @@
     </div>
   </div>
 </div>
+
 </br>
 </br>
 </br>
