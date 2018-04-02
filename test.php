@@ -1,1 +1,0 @@
-<a download href="poza.jpg">Download</a>
