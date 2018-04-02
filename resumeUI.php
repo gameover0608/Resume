@@ -31,8 +31,8 @@
           <div class="input-group-prepend">
             <span class="input-group-text" id="">First and last name</span>
           </div>
-          <input type="text" class="form-control" name="firstname" required>
-          <input type="text" class="form-control" name="lastname" required>
+          <input type="text" class="form-control" name="firstname" >
+          <input type="text" class="form-control" name="lastname" >
           <span class="error" style="color:red;">  *</span>
         </div>
       </div>
@@ -45,7 +45,7 @@
           <div class="input-group-prepend">
             <span class="input-group-text" >Email</span>
           </div>
-          <input type="email" class="form-control" placeholder="email" name="email" required>
+          <input type="email" class="form-control" placeholder="email" name="email" >
         </div>
       </div>
     </div>
@@ -56,7 +56,7 @@
           <div class="input-group-prepend">
             <span class="input-group-text">Date of Birth</span>
           </div>
-          <input type="date" class="form-control" name="dateofbirth" required>
+          <input type="date" class="form-control" name="dateofbirth" >
         </div>
       </div>
     </div>
@@ -67,7 +67,7 @@
           <div class="input-group-prepend">
             <span class="input-group-text" id="basic-addon1">Adress</span>
           </div>
-          <input type="text" class="form-control" name="adress" required/>
+          <input type="text" class="form-control" name="adress" />
         </div>
       </div>
     </div>
@@ -158,7 +158,7 @@
               <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon1">School</span>
               </div>
-              <input type="text" class="form-control" name="scoala" required="">
+              <input type="text" class="form-control" name="scoala" >
             </div>
           </div>
         </div>
@@ -168,7 +168,7 @@
               <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon1">School Specialty</span>
               </div>
-              <input type="text" class="form-control" name="specialitatescoala" required>
+              <input type="text" class="form-control" name="specialitatescoala" >
             </div>
           </div>
         </div>
@@ -178,8 +178,8 @@
               <div class="input-group-prepend">
                 <span class="input-group-text" id="">Period</span>
               </div>
-              <input type="date" class="form-control" name="inceperescoala" required>
-              <input type="date" class="form-control" name="terminarescoala" required>
+              <input type="date" class="form-control" name="inceperescoala" >
+              <input type="date" class="form-control" name="terminarescoala" >
             </div>
           </div>
         </div>
@@ -193,7 +193,7 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="basic-addon1">High School</span>
         </div>
-        <input type="text" class="form-control" name="liceu" required="">
+        <input type="text" class="form-control" name="liceu" >
       </div>
     </div>
   </div>
@@ -203,7 +203,7 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="basic-addon1">Specialty</span>
         </div>
-        <input type="text" class="form-control" name="specialitateliceu" required>
+        <input type="text" class="form-control" name="specialitateliceu" >
       </div>
     </div>
   </div>
@@ -213,8 +213,8 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="">Period</span>
         </div>
-        <input type="date" class="form-control" required="">
-        <input type="date" class="form-control" required="">
+        <input type="date" class="form-control">
+        <input type="date" class="form-control">
       </div>
       <div class="checkbox">
         <label><input type="checkbox" value="">Am doar 10 clase</label>
