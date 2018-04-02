@@ -31,8 +31,8 @@
           <div class="input-group-prepend">
             <span class="input-group-text" id="">First and last name</span>
           </div>
-          <input type="text" class="form-control" name="firstname" >
-          <input type="text" class="form-control" name="lastname" >
+          <input type="text" class="form-control" name="firstname" required>
+          <input type="text" class="form-control" name="lastname" required>
           <span class="error" style="color:red;">  *</span>
         </div>
       </div>
@@ -45,7 +45,7 @@
           <div class="input-group-prepend">
             <span class="input-group-text" >Email</span>
           </div>
-          <input type="email" class="form-control" placeholder="email" name="email" >
+          <input type="email" class="form-control" placeholder="email" name="email" required>
         </div>
       </div>
     </div>
@@ -56,7 +56,7 @@
           <div class="input-group-prepend">
             <span class="input-group-text">Date of Birth</span>
           </div>
-          <input type="date" class="form-control" name="dateofbirth" >
+          <input type="date" class="form-control" name="dateofbirth" required>
         </div>
       </div>
     </div>
@@ -67,7 +67,7 @@
           <div class="input-group-prepend">
             <span class="input-group-text" id="basic-addon1">Adress</span>
           </div>
-          <input type="text" class="form-control" name="adress" />
+          <input type="text" class="form-control" name="adress" required/>
         </div>
       </div>
     </div>
@@ -158,7 +158,7 @@
               <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon1">School</span>
               </div>
-              <input type="text" class="form-control" name="scoala" >
+              <input type="text" class="form-control" name="scoala" required>
             </div>
           </div>
         </div>
@@ -168,7 +168,7 @@
               <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon1">School Specialty</span>
               </div>
-              <input type="text" class="form-control" name="specialitatescoala" >
+              <input type="text" class="form-control" name="specialitatescoala" required>
             </div>
           </div>
         </div>
@@ -178,8 +178,8 @@
               <div class="input-group-prepend">
                 <span class="input-group-text" id="">Period</span>
               </div>
-              <input type="date" class="form-control" name="inceperescoala" >
-              <input type="date" class="form-control" name="terminarescoala" >
+              <input type="date" class="form-control" name="inceperescoala" required>
+              <input type="date" class="form-control" name="terminarescoala" required>
             </div>
           </div>
         </div>
@@ -193,7 +193,7 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="basic-addon1">High School</span>
         </div>
-        <input type="text" class="form-control" name="liceu" >
+        <input type="text" class="form-control" name="liceu" required>
       </div>
     </div>
   </div>
@@ -203,7 +203,7 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="basic-addon1">Specialty</span>
         </div>
-        <input type="text" class="form-control" name="specialitateliceu" >
+        <input type="text" class="form-control" name="specialitateliceu" required>
       </div>
     </div>
   </div>
@@ -242,7 +242,7 @@
     <div class="input-group mb-3">
       <div class="input-group-prepend">
         <span class="input-group-text" id="basic-addon1">Specialzation</span>
-        <input type="text" class="form-control" name="specializarefacultate">
+        <input type="text" class="form-control" name="specializarefacultate" >
     </div>
   </div>
 </div>
@@ -275,7 +275,7 @@
 <div class="row">
   <div class="form-group form-group-options col-xs-11 col-sm-8 col-md-4">
     <div class="input-group input-group-option col-xs-12">
-      <input type="text" name="abilitati[]" class="form-control" placeholder="ex:PHP,Kinetoterapie...">
+      <input type="text" name="abilitati[]" class="form-control" placeholder="ex:PHP,Kinetoterapie..." required>
       <span class="input-group-addon input-group-addon-remove">
         <span class="glyphicon glyphicon-remove">Delete</span>
       </span>
